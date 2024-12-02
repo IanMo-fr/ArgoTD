@@ -7,3 +7,8 @@ metadata:
   name: guestbook-cm
 data:
   API_URL: "http://google.fr"
+
+patches:
+  - path: minimum-replicas.yaml
+    target:
+      kind: Deployment
